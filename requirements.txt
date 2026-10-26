@@ -1,0 +1,66 @@
+# =============================================================
+# HarvestGames v2 — Dépendances du projet
+# -------------------------------------------------------------
+# Usage dev local (créer/rafraîchir un venv from scratch) :
+#     pip install -r requirements.txt
+#
+# Snapshot exact (reproductibilité stricte) :
+#     pip install -r requirements.lock.txt
+# =============================================================
+
+# --- Base ---
+pandas==3.0.3
+numpy==2.5.1
+scipy==1.18.1
+pyarrow==24.0.0
+python-dateutil
+
+# --- Base de données ---
+SQLAlchemy==2.0.51
+psycopg2-binary==2.9.12
+geoalchemy2==0.18.0
+
+# --- ETL / extraction ---
+boto3==1.43.39
+botocore==1.43.39
+s3fs==2026.7.0
+fsspec==2026.7.0
+cdsapi==0.7.7
+openpyxl==3.1.5
+tqdm==4.69.0
+
+# --- NetCDF / xarray ---
+xarray==2025.6.1
+netCDF4==1.7.4
+h5netcdf==1.8.1
+
+# --- Géospatial ---
+geopandas==1.1.4
+shapely==2.1.2
+pyproj==3.7.1
+pyogrio==0.13.0
+rasterio==1.4.4
+rioxarray==0.19.0
+affine==2.4.0
+
+# --- ML ---
+scikit-learn==1.9.0
+xgboost==3.4.1
+joblib==1.6.0
+
+# --- API ---
+fastapi==0.143.2
+uvicorn==0.54.0
+pydantic==2.14.1
+requests==2.34.2
+
+# --- Streamlit ---
+streamlit==1.60.0
+plotly==6.9.0
+altair==6.3.0
+folium==0.20.0
+streamlit-folium==0.27.3
+pydeck==0.9.3
+
+# --- Utilitaires ---
+python-dotenv==1.2.2
